@@ -52,6 +52,7 @@ namespace MedicalForm
                 json = json.Replace("myTemp", string.Format("{0:0.0}", GetRandomNumber(36.0, 36.5)));
                 json = json.Replace("myDate1", DateTime.Now.ToString("yyyy-MM-dd'T'HH:mm:ss.888'Z'"));
                 json = json.Replace("myDate2", DateTime.Now.ToString("yyyy-MM-dd'T'HH:mm:ss.888'Z'"));
+                json = json.Replace("myDate3", DateTime.Now.ToShortDateString());
             }
             return json;
         }
